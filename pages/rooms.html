@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel - Our Rooms</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">Luxury Hotel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Our Rooms & Suites</h1>
+                    <p class="lead">Experience luxury and comfort in our elegant accommodations</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Booking Form -->
+    <section class="py-4 bg-primary">
+        <div class="container">
+            <form class="row g-3 align-items-center">
+                <div class="col-md">
+                    <label for="checkIn" class="visually-hidden">Check In</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-white"><i class="bi bi-calendar"></i></span>
+                        <input type="date" class="form-control" id="checkIn" placeholder="Check In">
+                    </div>
+                </div>
+                <div class="col-md">
+                    <label for="checkOut" class="visually-hidden">Check Out</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-white"><i class="bi bi-calendar"></i></span>
+                        <input type="date" class="form-control" id="checkOut" placeholder="Check Out">
+                    </div>
+                </div>
+                <div class="col-md">
+                    <label for="adults" class="visually-hidden">Adults</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-white"><i class="bi bi-person"></i></span>
+                        <select class="form-select" id="adults">
+                            <option selected>Adults</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <label for="children" class="visually-hidden">Children</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-white"><i class="bi bi-person-heart"></i></span>
+                        <select class="form-select" id="children">
+                            <option selected>Children</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-auto">
+                    <button type="submit" class="btn btn-light">Check Availability</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Standard Room -->
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/images/standerdRoon.jpg" alt="Standard Room" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Standard Room</h2>
+                    <div class="mb-3">
+                        <span class="badge bg-primary me-1">From $99/night</span>
+                        <span class="badge bg-secondary me-1">25 m²</span>
+                        <span class="badge bg-info me-1">1-2 Persons</span>
+                    </div>
+                    <p>Our Standard Rooms offer a comfortable and cozy space for travelers seeking quality accommodations at an affordable price. Each room is thoughtfully designed with modern furnishings and essential amenities to ensure a pleasant stay.</p>
+                    <h5>Room Features:</h5>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Queen-size bed with premium linens</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> En-suite bathroom with shower</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Flat-screen TV with cable channels</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Free high-speed Wi-Fi</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Air conditioning</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Coffee and tea making facilities</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</a>
+                    <a href="gallery.html" class="btn btn-outline-primary">View More Photos</a>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Deluxe Room -->
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2">
+                    <img src="/images/deluxe-room.jpg" alt="Deluxe Room" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2>Deluxe Room</h2>
+                    <div class="mb-3">
+                        <span class="badge bg-primary me-1">From $149/night</span>
+                        <span class="badge bg-secondary me-1">35 m²</span>
+                        <span class="badge bg-info me-1">1-2 Persons</span>
+                    </div>
+                    <p>Our Deluxe Rooms offer a perfect blend of comfort and elegance. Featuring premium furnishings and additional space, these rooms are ideal for guests seeking a more luxurious experience. Enjoy beautiful views and enhanced amenities.</p>
+                    <h5>Room Features:</h5>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> King-size bed with premium linens</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Spacious en-suite bathroom with bathtub and shower</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> 42-inch flat-screen TV with premium channels</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Free high-speed Wi-Fi with enhanced bandwidth</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Air conditioning with individual climate control</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Mini-bar and coffee machine</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Comfortable seating area</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</a>
+                    <a href="gallery.html" class="btn btn-outline-primary">View More Photos</a>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Luxury Suite -->
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/images/luxery suites.jpg" alt="Luxury Suite" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Luxury Suite</h2>
+                    <div class="mb-3">
+                        <span class="badge bg-primary me-1">From $249/night</span>
+                        <span class="badge bg-secondary me-1">55 m²</span>
+                        <span class="badge bg-info me-1">1-4 Persons</span>
+                    </div>
+                    <p>Our Luxury Suites represent the pinnacle of comfort and sophistication. With a separate living area and bedroom, these spacious accommodations offer an unparalleled experience. Perfect for extended stays, families, or those seeking the ultimate in luxury.</p>
+                    <h5>Suite Features:</h5>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> King-size bed with premium linens and pillow menu</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Separate living room with sofa bed</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Luxury bathroom with jacuzzi tub and walk-in shower</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Two 50-inch flat-screen TVs</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Premium sound system</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Fully stocked mini-bar</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Espresso machine and tea selection</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Private balcony with seating (in select suites)</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</a>
+                    <a href="gallery.html" class="btn btn-outline-primary">View More Photos</a>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Family Room -->
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2">
+                    <img src="/images/family room.jpg" alt="Family Room" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2>Family Room</h2>
+                    <div class="mb-3">
+                        <span class="badge bg-primary me-1">From $199/night</span>
+                        <span class="badge bg-secondary me-1">45 m²</span>
+                        <span class="badge bg-info me-1">2-5 Persons</span>
+                    </div>
+                    <p>Our Family Rooms are specially designed to accommodate families with children. Spacious and practical, these rooms offer comfortable sleeping arrangements and amenities that cater to the needs of both parents and children.</p>
+                    <h5>Room Features:</h5>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> One king-size bed and two single beds</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Spacious bathroom with bathtub and shower</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> 42-inch flat-screen TV with children's channels</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Free high-speed Wi-Fi</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Mini-fridge and microwave</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Child-friendly amenities available upon request</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Extra space for play or additional bed</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</a>
+                    <a href="gallery.html" class="btn btn-outline-primary">View More Photos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="bookingModalLabel">Book Your Stay</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label for="modalCheckIn" class="form-label">Check In Date</label>
+                                <input type="date" class="form-control" id="modalCheckIn" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="modalCheckOut" class="form-label">Check Out Date</label>
+                                <input type="date" class="form-control" id="modalCheckOut" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label for="roomType" class="form-label">Room Type</label>
+                                <select class="form-select" id="roomType" required>
+                                    <option value="">Select Room Type</option>
+                                    <option value="standard">Standard Room</option>
+                                    <option value="deluxe">Deluxe Room</option>
+                                    <option value="suite">Luxury Suite</option>
+                                    <option value="family">Family Room</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="guests" class="form-label">Number of Guests</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <select class="form-select" id="adultGuests" required>
+                                            <option value="">Adults</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <select class="form-select" id="childGuests">
+                                            <option value="0">Children</option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label for="guestName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="guestName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="guestEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="guestEmail" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="guestPhone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="guestPhone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="specialRequests" class="form-label">Special Requests</label>
+                            <textarea class="form-control" id="specialRequests" rows="3" placeholder="Any special requests or requirements?"></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                            <label class="form-check-label" for="termsCheck">
+                                I agree to the <a href="#">terms and conditions</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Complete Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Luxury Hotel</h5>
+                    <p>123 Beach Road<br>Paradise City, PC 12345<br>Country</p>
+                    <p>Phone: +1 (123) 456-7890<br>Email: info@luxuryhotel.com</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="rooms.html" class="text-white">Rooms</a></li>
+                        <li><a href="gallery.html" class="text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for special offers</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <p class="mb-0">&copy; 2023 Luxury Hotel. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
